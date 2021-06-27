@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Incidencias 311</string>
+
+    <!-- TODO: Strings de Activity de Login-->
+    <string name="Codigo_Cuenta">Código de Activación</string>
+    <string name="Activar_Cuenta">Activar Cuenta</string>
+    <string name="Boton_Registro">Registrarse</string>
+    <string name="Boton_Login">Iniciar Sesión</string>
+    <string name="Titulo_Login">Incidencias 311</string>
+
+    <!-- TODO: Strings de Activity de Registro-->
+    <string name="ID">Cédula</string>
+    <string name="Name">Nombre</string>
+    <string name="Last_Name_1">1° Apellido</string>
+    <string name="Last_Name_2">2° Apellido</string>
+    <string name="Canton">Cantón</string>
+    <string name="Distrito">Distrito</string>
+    <string name="Direction">Dirección</string>
+    <string name="Email">Email</string>
+    <string name="Telephone">Teléfono</string>
+    <string name="Password">Contraseña</string>
+
+    <string-array name="spn_Provincia">
+        <item>San José</item>
+        <item>Alajuela</item>
+        <item>Cartago</item>
+        <item>Heredia</item>
+        <item>Guanacaste</item>
+        <item>Puntarenas</item>
+        <item>Limón</item>
+    </string-array>
+
+    <!-- TODO: Strings de Activity de MainMenu-->
+    <string name="Incident_Activity">Incidencias</string>
+    <string name="Update_Incident_Activity">Actualizacion de incidencias</string>
+    <string name="Graphics_Activity">Gráficos</string>
+    <string name="Logout">Cerrar Sesión</string>
+
+
+    <!-- TODO: Strings de Activity de Incidentes-->
+    <string name="Type">Tipo</string>
+    <string name="Status">Estado</string>
+    <string name="Description">Descripción</string>
+    <string name="Company">Empresa</string>
+    <string name="Boton_Crear_Reporte">Crear reporte</string>
+    <string name="Boton_Tomar_Foto">Tomar foto</string>
+
+    <string-array name="Incidents_Category">
+        <item>Puente</item>
+        <item>Carretera</item>
+        <item>Servicio Público</item>
+        <item>Servicio Privado</item>
+    </string-array>
+
+    <!-- TODO: Strings de Activity de UpdateIncidents-->
+    <string name="ID_Incidente">Inserte el ID del incidente</string>
+    <string name="Titulo_Update_Incident">Incidentes reportados</string>
+    <string name="Boton_Update">Actualizar Estado</string>
+    <string-array name="Incidents_Status">
+        <item>Reportado</item>
+        <item>En proceso</item>
+        <item>Finalizado</item>
+    </string-array>
+
+    <!-- TODO: Strings de Activity de Gráficos-->
+    <string name="btn_provincia">Gráficos por Provincia</string>
+    <string name="btn_categoria">Gráficos por Categoría</string>
+    <string name="leyenda_provincia">Eje X: \n Provincias: \n 1-San José \n 2-Alajuela  \n 3-Cartago  \n 4-Heredia \n 5-Guanacaste \n 6-Puntarenas \n 7-Limón</string>
+    <string name="leyenda_categoria">Eje X: \n Categorías: \n 1-Puentes \n  2-Carreteras \n 3-Servicios Públicos \n 4-Servicios Privados </string>
+    <string name="Titulo_Graphics">Gráficos</string>
+</resources>

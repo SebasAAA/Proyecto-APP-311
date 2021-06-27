@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/fragment"
+        android:layout_gravity="center_horizontal">
+
+        <Space style="@style/espacio"
+            />
+
+        <ImageButton
+            android:id="@+id/imgIncident"
+            android:src="@drawable/camera"
+            style="@style/botones" />
+
+        <Space style="@style/espacio"
+            />
+
+        <ImageButton
+            android:id="@+id/imgUpdate"
+            android:src="@drawable/update"
+            style="@style/botones" />
+
+        <Space style="@style/espacio"
+            />
+
+        <ImageButton
+            android:id="@+id/imgGraphics"
+            android:src="@drawable/graphics"
+            style="@style/botones" />
+
+        <Space style="@style/espacio"
+            />
+
+        <ImageButton
+            android:id="@+id/imgExit"
+            android:src="@drawable/exit"
+            style="@style/botones" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

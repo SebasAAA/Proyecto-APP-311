@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.proyectoapp311cr"
+    tools:ignore="ExtraText">
+
+    <!-- Solicita permiso para usar la cámara del dispositivo Android. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Solicita permiso para usar las funciones de la cámara. -->
+    <uses-feature android:name="android.hardware.camera"
+                                android:required="true"/>
+
+    <!-- Solicita permiso para acceder a la localización del GPS. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- Solicita permiso para guardar archivos en la tarjeta SD. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Solicita permiso para leer  y escribir en la Tarjeta SD. -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+
+    <!-- Solicita permiso para grabar audio. -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Solicita permiso para asignar geolocalización a las imágenes. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Solicita permiso para el uso del Wifi y los datos celulares. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+
+//Provider que permite guardar archivos en el directorio especificado en el archivo de recurso XML.
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.proyectoapp311cr.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        //Permite colocar la actividad por defecto en modo vertical.
+
+        <activity android:name=".IncidentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".GraphicsActivity" />
+        <activity android:name=".UpdateIncidentActivity" />
+        <activity android:name=".RegistryActivity" />
+        <activity android:name=".MenuInicio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
